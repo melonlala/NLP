@@ -1,0 +1,66 @@
+% \usepackage{mathrsfs}
+
+
+
+
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode} 
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}       
+\renewcommand{\algorithmicensure}{ \textbf{Output:}} 
+
+
+
+%%%% Commands
+\usepackage{ifthen}
+\usepackage{xifthen}
+\def\*#1{\mathbf{#1}} \def\+#1{\mathcal{#1}} \def\-#1{\mathrm{#1}}\def\^#1{\mathbb{#1}}\def\!#1{\mathtt{#1}}
+% \def\@#1{\mathscr{#1}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\tuple}[1]{\left(#1\right)} \newcommand{\eps}{\varepsilon}
+\newcommand{\inner}[2]{\langle #1,#2\rangle} \newcommand{\tp}{\tuple}
+\renewcommand{\mid}{\;\middle\vert\;} \newcommand{\cmid}{\,:\,}
+\newcommand{\numP}{\#\mathbf{P}} \renewcommand{\P}{\mathbf{P}}
+\newcommand{\defeq}{\triangleq} \renewcommand{\d}{\,\-d}
+\newcommand{\ol}{\overline}
+\newcommand{\argmin}{\mathop{\arg\min}}
+\renewcommand{\Pr}[2][]{ \ifthenelse{\isempty{#1}}
+  {\mathbf{Pr}\left[#2\right]} {\mathbf{Pr}_{#1}\left[#2\right]} }
+\newcommand{\E}[2][]{ \ifthenelse{\isempty{#1}}
+  {\mathbb{E}\left[#2\right]}
+  {\mathbb{E}_{#1}\left[#2\right]} }
+\newcommand{\Var}[2][]{ \ifthenelse{\isempty{#1}}
+  {\mathbf{Var}\left[#2\right]}
+  {\mathbf{Var}_{#1}\left[#2\right]} }
+\newcommand{\Ent}[2][]{ \ifthenelse{\isempty{#1}}
+  {\mathbf{Ent}\left[#2\right]}
+  {\mathbf{Ent}_{#1}\left[#2\right]} }
+\renewcommand{\emptyset}{\varnothing}
+\providecommand{\lxor}{\oplus}
+\newcommand{\start}[1]{\mathrm{start}\left(#1\right)}
+\newcommand{\finish}[1]{\mathrm{finish}\left(#1\right)}
+\newcommand{\depth}[1]{\mathrm{depth}\left(#1\right)}
+\newcommand{\lis}[1]{\mathrm{LIS}\left(#1\right)}
+\newcommand{\marked}[1]{\mathrm{marked}\left[#1\right]}
+\newcommand{\tdist}[1]{\mathrm{tdist}\left[#1\right]}
+\newcommand{\dist}[2][]{ \ifthenelse{\isempty{#1}}
+  {\mathrm{dist}\left[#2\right]}
+  {\mathrm{dist}_{#1}\left[#2\right]} }
+\newcommand{\pre}[1]{\mathrm{pre}\left[#1\right]}
+\newcommand{\cost}[1]{\mathrm{cost}\left[#1\right]}
+\newcommand{\rank}[1]{\mathrm{rank}\left[#1\right]}
+\newcommand{\ed}[1]{\mathrm{ED}\left[#1\right]}
+\newcommand{\hinge}[1]{\mathrm{Hinge}\left[#1\right]}
+\newcommand{\true}{\texttt{true}}
+\newcommand{\false}{\texttt{false}}
+\newcommand{\p}{\textbf{P}}
+\newcommand{\np}{\textbf{NP}}
+\newcommand{\opt}{\mathrm{OPT}}
+\newcommand{\reduce}{\leq_k}
+
+
+\newcommand{\norm}[2][]{ \ifthenelse{\isempty{#1}}
+  {\left\|#2\right\|}
+  {\left\|#2\right\|_{#1}} }
+%%%%
