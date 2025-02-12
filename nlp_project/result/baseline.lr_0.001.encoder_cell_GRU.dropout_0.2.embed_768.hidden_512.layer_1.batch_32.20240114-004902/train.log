@@ -1,0 +1,93 @@
+2024-01-14 00:49:02,543 - INFO: +---------------+--------------------+
+| Parameter     | Value              |
++---------------+--------------------+
+| dataroot      | ./data             |
++---------------+--------------------+
+| word2vec_path | ./word2vec-768.txt |
++---------------+--------------------+
+| seed          | 999                |
++---------------+--------------------+
+| device        | 0                  |
++---------------+--------------------+
+| testing       | False              |
++---------------+--------------------+
+| noise         | 1                  |
++---------------+--------------------+
+| anti_noise    | True               |
++---------------+--------------------+
+| batch_size    | 32                 |
++---------------+--------------------+
+| lr            | 0.001              |
++---------------+--------------------+
+| max_epoch     | 100                |
++---------------+--------------------+
+| encoder_cell  | GRU                |
++---------------+--------------------+
+| rnn           | GRU                |
++---------------+--------------------+
+| dropout       | 0.200              |
++---------------+--------------------+
+| embed_size    | 768                |
++---------------+--------------------+
+| hidden_size   | 512                |
++---------------+--------------------+
+| num_layer     | 1                  |
++---------------+--------------------+
+| num_head      | 8                  |
++---------------+--------------------+
+| use_crf       | False              |
++---------------+--------------------+
+| model         | transformer        |
++---------------+--------------------+
+| vocab_size    | 1741               |
++---------------+--------------------+
+| pad_idx       | 0                  |
++---------------+--------------------+
+| num_tags      | 74                 |
++---------------+--------------------+
+| tag_pad_idx   | 0                  |
++---------------+--------------------+
+2024-01-14 00:49:02,547 - INFO: Total training steps: 16000
+2024-01-14 00:49:02,547 - INFO: =================Start training =================================
+2024-01-14 00:49:16,370 - INFO: Training: 	Epoch: 0	Time: 13.8224	Training Loss: 0.0971
+2024-01-14 00:49:17,049 - INFO: Evaluation: 	Epoch: 0	Time: 0.5817	Dev acc: 87.26	Dev fscore(p/r/f): (99.65/88.11/93.53)
+2024-01-14 00:49:17,198 - INFO: FINAL BEST RESULT: 	Epoch: 0	Dev loss: 0.0058	Dev acc: 87.2626	Dev fscore(p/r/f): (99.6462/88.1126/93.5252)
+2024-01-14 00:49:29,571 - INFO: Training: 	Epoch: 1	Time: 12.3732	Training Loss: 0.0021
+2024-01-14 00:49:30,195 - INFO: Evaluation: 	Epoch: 1	Time: 0.5150	Dev acc: 87.49	Dev fscore(p/r/f): (99.88/88.32/93.75)
+2024-01-14 00:49:30,357 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:49:42,670 - INFO: Training: 	Epoch: 2	Time: 12.3128	Training Loss: 0.0010
+2024-01-14 00:49:43,295 - INFO: Evaluation: 	Epoch: 2	Time: 0.5286	Dev acc: 87.49	Dev fscore(p/r/f): (99.88/88.32/93.75)
+2024-01-14 00:49:43,296 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:49:55,654 - INFO: Training: 	Epoch: 3	Time: 12.3585	Training Loss: 0.0013
+2024-01-14 00:49:56,274 - INFO: Evaluation: 	Epoch: 3	Time: 0.5228	Dev acc: 87.49	Dev fscore(p/r/f): (99.88/88.32/93.75)
+2024-01-14 00:49:56,275 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:50:08,726 - INFO: Training: 	Epoch: 4	Time: 12.4507	Training Loss: 0.0037
+2024-01-14 00:50:09,373 - INFO: Evaluation: 	Epoch: 4	Time: 0.5415	Dev acc: 87.37	Dev fscore(p/r/f): (99.88/88.22/93.69)
+2024-01-14 00:50:09,373 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:50:21,747 - INFO: Training: 	Epoch: 5	Time: 12.3740	Training Loss: 0.0418
+2024-01-14 00:50:22,365 - INFO: Evaluation: 	Epoch: 5	Time: 0.5123	Dev acc: 87.15	Dev fscore(p/r/f): (99.76/88.11/93.58)
+2024-01-14 00:50:22,365 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:50:34,695 - INFO: Training: 	Epoch: 6	Time: 12.3295	Training Loss: 0.0232
+2024-01-14 00:50:35,314 - INFO: Evaluation: 	Epoch: 6	Time: 0.5165	Dev acc: 87.15	Dev fscore(p/r/f): (99.76/88.01/93.52)
+2024-01-14 00:50:35,314 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:50:47,670 - INFO: Training: 	Epoch: 7	Time: 12.3558	Training Loss: 0.0251
+2024-01-14 00:50:48,298 - INFO: Evaluation: 	Epoch: 7	Time: 0.5266	Dev acc: 87.37	Dev fscore(p/r/f): (99.76/88.22/93.64)
+2024-01-14 00:50:48,298 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:51:00,697 - INFO: Training: 	Epoch: 8	Time: 12.3976	Training Loss: 0.0267
+2024-01-14 00:51:01,349 - INFO: Evaluation: 	Epoch: 8	Time: 0.5465	Dev acc: 87.26	Dev fscore(p/r/f): (99.53/88.11/93.47)
+2024-01-14 00:51:01,349 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:51:13,732 - INFO: Training: 	Epoch: 9	Time: 12.3834	Training Loss: 0.0106
+2024-01-14 00:51:14,371 - INFO: Evaluation: 	Epoch: 9	Time: 0.5266	Dev acc: 87.37	Dev fscore(p/r/f): (99.53/88.11/93.47)
+2024-01-14 00:51:14,371 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:51:26,738 - INFO: Training: 	Epoch: 10	Time: 12.3671	Training Loss: 0.0089
+2024-01-14 00:51:27,381 - INFO: Evaluation: 	Epoch: 10	Time: 0.5451	Dev acc: 87.26	Dev fscore(p/r/f): (99.76/88.11/93.58)
+2024-01-14 00:51:27,381 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:51:39,781 - INFO: Training: 	Epoch: 11	Time: 12.3990	Training Loss: 0.0129
+2024-01-14 00:51:40,447 - INFO: Evaluation: 	Epoch: 11	Time: 0.5536	Dev acc: 87.37	Dev fscore(p/r/f): (99.65/88.22/93.58)
+2024-01-14 00:51:40,448 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:51:52,874 - INFO: Training: 	Epoch: 12	Time: 12.4257	Training Loss: 0.0078
+2024-01-14 00:51:53,540 - INFO: Evaluation: 	Epoch: 12	Time: 0.5535	Dev acc: 87.37	Dev fscore(p/r/f): (99.65/88.11/93.53)
+2024-01-14 00:51:53,540 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
+2024-01-14 00:52:05,926 - INFO: Training: 	Epoch: 13	Time: 12.3864	Training Loss: 0.0089
+2024-01-14 00:52:06,543 - INFO: Evaluation: 	Epoch: 13	Time: 0.5126	Dev acc: 87.49	Dev fscore(p/r/f): (99.88/88.32/93.75)
+2024-01-14 00:52:06,543 - INFO: FINAL BEST RESULT: 	Epoch: 1	Dev loss: 0.0008	Dev acc: 87.4860	Dev fscore(p/r/f): (99.8821/88.3212/93.7465)
